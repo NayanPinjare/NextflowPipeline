@@ -2,6 +2,6 @@
 .nextflow.log
 work/
 results/
-data/
-reference/
+Data/
+Reference/
 nohup.out
