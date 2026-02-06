@@ -1,0 +1,39 @@
+This is cutadapt 4.4 with Python 3.12.3
+Command line parameters: -a AGATCGGAAGAGC -o sample_trimmed.fastq Sample1.fastq
+Processing single-end reads on 1 core ...
+Finished in 0.598 s (43.157 µs/read; 1.39 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  13,853
+Reads with adapters:                       121 (0.9%)
+Reads written (passing filters):        13,853 (100.0%)
+
+Total basepairs processed:     3,206,747 bp
+Total written (filtered):      3,205,586 bp (100.0%)
+
+=== Adapter 1 ===
+
+Sequence: AGATCGGAAGAGC; Type: regular 3'; Length: 13; Trimmed: 121 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-13 bp: 1
+
+Bases preceding removed adapters:
+  A: 50.4%
+  C: 19.8%
+  G: 21.5%
+  T: 8.3%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	82	216.5	0	82
+4	33	54.1	0	33
+5	1	13.5	0	1
+6	1	3.4	0	1
+46	1	0.0	1	0 1
+89	1	0.0	1	0 1
+197	1	0.0	1	0 1
+440	1	0.0	1	0 1

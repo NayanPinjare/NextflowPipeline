@@ -1,0 +1,3 @@
+/mnt/d/bioinfo_pipeline/work/53/f6063ae6839e6e04271c81b26dc49b/.command.sh: line 2: /home/nayan/miniconda3/envs/bnf/bin/bcftools: No such file or directory
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+Failed to read from standard input: unknown file type

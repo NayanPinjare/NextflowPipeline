@@ -1,0 +1,3 @@
+Module	Section	Sample Name	Source
+FastQC	all_sections	Sample1	/mnt/d/bioinfo_pipeline/work/e8/d113fa1ff433db85430849a094878c/Sample1_fastqc.zip
+FastQC	all_sections	sample	/mnt/d/bioinfo_pipeline/work/e8/d113fa1ff433db85430849a094878c/sample_trimmed_fastqc.zip

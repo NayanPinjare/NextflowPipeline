@@ -1,0 +1,11 @@
+
+  /// MultiQC 🔍 | v1.18
+
+|           multiqc | MultiQC Version v1.33 now available!
+|           multiqc | Search path : /mnt/d/bioinfo_pipeline/work/e8/d113fa1ff433db85430849a094878c
+|         searching | ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 10/10  
+|            fastqc | Found 2 reports
+|           multiqc | Report      : multiqc_report.html
+|           multiqc | Data        : multiqc_data
+|           multiqc | Could not include file 'assets/js/packages/jszip.min.js': [Errno 2] No such file or directory: '/tmp/tmptotisorh/assets/js/packages/jszip.min.js'
+|           multiqc | MultiQC complete

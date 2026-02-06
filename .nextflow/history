@@ -1,0 +1,5 @@
+2026-02-06 15:53:14	54.9s	amazing_ekeblad	ERR	ec267dfdee0118a6e266d77b1ea36170	9718a60f-44f1-4af3-a352-38cfedb4a33d	nextflow run main.nf
+2026-02-06 15:55:08	3.1s	confident_gilbert	ERR	ec267dfdee0118a6e266d77b1ea36170	9718a60f-44f1-4af3-a352-38cfedb4a33d	nextflow run main.nf -resume
+2026-02-06 16:04:04	3.3s	deadly_joliot	ERR	ec267dfdee0118a6e266d77b1ea36170	9718a60f-44f1-4af3-a352-38cfedb4a33d	nextflow run main.nf -resume
+2026-02-06 16:10:37	2.9s	silly_perlman	ERR	ec267dfdee0118a6e266d77b1ea36170	9718a60f-44f1-4af3-a352-38cfedb4a33d	nextflow run main.nf -resume
+2026-02-06 16:11:27	3.4s	drunk_snyder	OK	ec267dfdee0118a6e266d77b1ea36170	9718a60f-44f1-4af3-a352-38cfedb4a33d	nextflow run main.nf -resume
