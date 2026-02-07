@@ -49,11 +49,13 @@ The pipeline follows a standard variant calling workflow:
 └── README.md
 
 # Software & Requirements
+
 Nextflow
 
 Conda / Miniconda
 
 Tools Installed via Conda
+
 FastQC
 
 Trimmomatic / Cutadapt
@@ -67,74 +69,85 @@ bcftools / GATK
 MultiQC
 
 Environment Setup
+
 Create the Conda environment using the provided file:
 
-bash
-Copy code
 conda env create -f environment.yml
 conda activate variant_pipeline
+
+
 Ensure that Conda support is enabled in nextflow.config.
 
 Input Files
 Sequencing Data
+
 Place raw FASTQ files inside the data/ directory:
 
-text
-Copy code
 data/sample1.fastq
+
 Reference Genome
+
 Place the reference genome inside the references/ directory:
 
-text
-Copy code
 references/chr22.fa
+
+
 ⚠️ The reference genome must be indexed before alignment.
 
 How to Run the Pipeline
+
 Run the pipeline from the project root directory:
 
-bash
-Copy code
 nextflow run main.nf
+
+
 To resume the pipeline after interruption:
 
-bash
-Copy code
 nextflow run main.nf -resume
+
 Step-by-Step Pipeline Explanation
 Quality Control of Raw Reads
+
 Module: qc_raw_reads.nf
 FastQC is used to assess raw read quality, GC content, and adapter contamination.
 
 Read Trimming
+
 Module: read_trimming.nf
 Low-quality bases and adapter sequences are removed to improve downstream analysis.
 
 Quality Control of Trimmed Reads
+
 Module: qc_trimmed_reads.nf
 FastQC is run again to confirm quality improvement after trimming.
 
 Read Alignment
+
 Module: read_alignment.nf
 Trimmed reads are aligned to the reference genome (chr22.fa).
 
 SAM to BAM Conversion
+
 Module: sam_to_bam.nf
 SAM files are converted to BAM format using SAMtools.
 
 BAM Sorting and Indexing
+
 Module: bam_sort_index.nf
 BAM files are sorted and indexed for efficient access.
 
 Variant Calling
+
 Module: variant_calling.nf
 Variants such as SNPs and indels are identified from the processed BAM files.
 
 MultiQC Report
+
 Module: multiqc.nf
 All QC outputs are combined into a single MultiQC report.
 
 Output Files
+
 FastQC reports (raw and trimmed)
 
 Trimmed FASTQ files
@@ -146,20 +159,19 @@ Variant (VCF) files
 MultiQC HTML report
 
 How to Clone This Repository
-bash
-Copy code
 git clone https://github.com/your-username/variant-calling-pipeline.git
 cd variant-calling-pipeline
+
 How to Push This Project to GitHub
-bash
-Copy code
 git init
 git add .
 git commit -m "Initial commit: Nextflow variant calling pipeline"
 git branch -M main
 git remote add origin https://github.com/your-username/variant-calling-pipeline.git
 git push -u origin main
+
 Important Points
+
 The pipeline must be executed from the project root directory
 
 Input FASTQ files should be placed inside the data/ folder
@@ -175,18 +187,6 @@ Intermediate files are stored in the work/ directory
 The .nextflow/ directory contains Nextflow internal metadata
 
 Each analysis step is implemented as a separate Nextflow module
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
