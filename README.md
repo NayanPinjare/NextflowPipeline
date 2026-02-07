@@ -26,11 +26,11 @@ Variant calling
 
 QC summary using MultiQC
 
-# Project Directory Structure
-├── .nextflow/                 # Nextflow internal files
-├── data/                      # Input sequencing data
+# Project structure directory.
+├── .nextflow/
+├── data/
 │   └── sample1.fastq
-├── modules/                   # Individual Nextflow modules
+├── modules/
 │   ├── qc_raw_reads.nf
 │   ├── read_trimming.nf
 │   ├── qc_trimmed_reads.nf
@@ -39,16 +39,17 @@ QC summary using MultiQC
 │   ├── bam_sort_index.nf
 │   ├── variant_calling.nf
 │   └── multiqc.nf
-├── references/                # Reference genome
+├── references/
 │   └── chr22.fa
-├── results/                   # Final output files
-├── work/                      # Nextflow working directory
-├── workflows/                 # Workflow definition
+├── results/
+├── work/
+├── workflows/
 │   └── workflow.nf
-├── environment.yml            # Conda environment
-├── main.nf                    # Pipeline entry point
-├── nextflow.config            # Nextflow configuration
+├── environment.yml
+├── main.nf
+├── nextflow.config
 └── README.md
+
 
 
 # Software & Requirements
@@ -184,5 +185,6 @@ git push -u origin main
 - Intermediate files are stored in the `work/` directory.
 - The `.nextflow/` directory contains Nextflow internal metadata.
 - Each analysis step is implemented as a separate Nextflow module.
+
 
 
