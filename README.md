@@ -20,10 +20,7 @@ The pipeline follows this standard variant calling workflow:
 8. QC summary using MultiQC  
 
 ---
-
-## Project Structure
-
-
+#Project Structure
 .
 ├── .nextflow/
 ├── data/
@@ -47,6 +44,7 @@ The pipeline follows this standard variant calling workflow:
 ├── main.nf
 ├── nextflow.config
 └── README.md
+
 
 Software & Requirements
 
@@ -187,3 +185,4 @@ Intermediate files are stored in the work/ directory.
 The .nextflow/ directory contains Nextflow internal metadata.
 
 Each analysis step is implemented as a separate Nextflow module.
+
