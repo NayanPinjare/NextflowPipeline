@@ -1,4 +1,4 @@
-Variant Calling Pipeline using Nextflow
+# Variant Calling Pipeline using Nextflow
 # Introduction
 
 Variant calling is a key step in NGS data analysis used to identify genetic variations such as SNPs and small insertions/deletions by comparing sequencing reads against a reference genome.
@@ -183,3 +183,4 @@ git push -u origin main
 - Intermediate files are stored in the `work/` directory.
 - The `.nextflow/` directory contains Nextflow internal metadata.
 - Each analysis step is implemented as a separate Nextflow module.
+
