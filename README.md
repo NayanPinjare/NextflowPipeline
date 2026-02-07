@@ -50,6 +50,7 @@ QC summary using MultiQC
 ├── nextflow.config            # Nextflow configuration
 └── README.md
 
+
 # Software & Requirements
 
 Nextflow
@@ -183,4 +184,5 @@ git push -u origin main
 - Intermediate files are stored in the `work/` directory.
 - The `.nextflow/` directory contains Nextflow internal metadata.
 - Each analysis step is implemented as a separate Nextflow module.
+
 
